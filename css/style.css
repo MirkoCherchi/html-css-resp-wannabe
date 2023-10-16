@@ -47,7 +47,7 @@ img {
 
 /* LAYOUT */
 .container {
-    /* width: 1140px; */
+    width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -129,15 +129,19 @@ img {
  ************************************************/
 
  /* desktop */
+
+@media screen and (max-width: 1140px) {
+    
  .container{
-    max-width: 1140px;
+    width: 100%;
  }
+}
 
  /* tablet */
 
- @media screen and (max-width: 780px) {
+ @media screen and (max-width: 768px) {
     .container{
-        max-width: 780px;
+        max-width: 100%;
     }
  }
 
@@ -147,7 +151,6 @@ img {
     
     .row{
         flex-direction: column;
-        align-items: center;  
     }
 
     .lessons .col{
@@ -212,6 +215,8 @@ img {
 
 .why-us{
     margin-bottom: 0;
+    padding-bottom: 2.5rem;
+    background-color: #222222;
 }
 
 }
